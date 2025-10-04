@@ -1,46 +1,5 @@
-def show(image):
-    for line in image:
-        print(line)
+import random
 
-def enlarge(array):
-    line = []
-    for item in array:
-        string  = str(item)
-        line_str = ""
-        for char in string:
-            char *= 2
-            line_str += char
-        line.append(line_str)
-        line.append(line_str)
-    return line
+my_list = [random.randint(0, 10) for i in range(10)]
 
-dot = ['@']
-show(enlarge(dot))
-# => @@
-# => @@
-
-dot = ['##']
-show(enlarge(dot))
-# => @@
-# => @@
-
-frame = [
-    '****',
-    '*  *',
-    '*  *',
-    '****'
-]
-show(frame)
-# => ****
-# => *  *
-# => *  *
-# => ****
-show(enlarge(frame))
-# => ********
-# => ********
-# => **    **
-# => **    **
-# => **    **
-# => **    **
-# => ********
-# => ********'''
+print(my_list)
